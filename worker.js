@@ -1,5 +1,5 @@
 // توکن ربات تلگرام خود را اینجا قرار دهید.
-const BOT_TOKEN = '';
+const BOT_TOKEN = '7956964199:AAE93a1RsT_rt08DDBWAkUUVQ4mVMATX37Y';
 
 /**
  * خواندن وضعیت فعال بودن ربات از KV
@@ -46,7 +46,7 @@ async function getCryptoList() {
     "نیر": "near", "شیلیز": "chz", "فایل‌کوین": "fil", "تتا": "theta",
     "هدرا": "hnt", "آوی": "aave", "پنکیک‌سواپ": "cake", "مونرو": "xmr",
     "زی‌کش": "zec", "دش": "dash", "نئو": "neo", "تون‌کوین": "ton",
-    "نات‌کوین": "nwc"
+    "نات‌کوین": "not"
   };
 
   // ادغام نگاشت اختصاصی در لیست ارزهای دریافت شده
@@ -196,7 +196,7 @@ async function handleRequest(request) {
           `📈 **بالاترین:** ${bestSell} تومان\n` +
           `📉 **کمترین:** ${bestBuy} تومان\n` +
           `📊 **روند:** ${trend}\n\n` +
-          `[👨‍💻 ساخته شده توسط aminiyt](https://t.me/asrnovin_ir)`;
+          `[👨‍💻 ساخته شده توسط crypto](https://t.me/airdropdaily_free)`;
         await sendTelegramMessage(chat_id, response_text, {
           disable_web_page_preview: true,
           parse_mode: "Markdown"
@@ -215,3 +215,4 @@ async function handleRequest(request) {
 addEventListener("fetch", event => {
   event.respondWith(handleRequest(event.request));
 });
+
